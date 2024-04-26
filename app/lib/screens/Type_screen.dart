@@ -30,19 +30,11 @@ class Type_screen extends StatelessWidget {
                 height: 214,
                 width: 271,
                 decoration: BoxDecoration(
-                    color: one,
+                    color: four,
                     borderRadius: BorderRadius.all(Radius.circular(8))),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    focusedBorder: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(8)),
-                        borderSide: BorderSide(color: one)),
-                    enabledBorder: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(8)),
-                        borderSide: BorderSide(color: one)),
-                    border: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(8)),
-                        borderSide: BorderSide(color: one)),
+                    border: InputBorder.none
                   ),
                 ),
               ),
