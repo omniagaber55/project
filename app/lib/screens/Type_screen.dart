@@ -27,15 +27,16 @@ class Type_screen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 44),
               child: Container(
+                padding: EdgeInsets.all(10),
                 height: 214,
                 width: 271,
                 decoration: BoxDecoration(
                     color: four,
                     borderRadius: BorderRadius.all(Radius.circular(8))),
                 child: TextFormField(
+                  maxLines: 6,
                   decoration: InputDecoration(
-                    border: InputBorder.none
-                  ),
+                      border: InputBorder.none, hintMaxLines: 5),
                 ),
               ),
             ),
@@ -44,12 +45,12 @@ class Type_screen extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                 Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ProcessingScreen(),
-                      ),
-                    );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ProcessingScreen(),
+                  ),
+                );
               },
               child: Container(
                 height: 52,
@@ -66,7 +67,6 @@ class Type_screen extends StatelessWidget {
                 )),
               ),
             ),
-          
           ],
         ),
       ),

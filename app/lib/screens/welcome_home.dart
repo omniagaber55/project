@@ -16,52 +16,59 @@ class Welcome_screen extends StatelessWidget {
               height: 70,
             ),
             Image.asset("assets/images/Logo (1).png"),
-            Text("Know more, with less.",style: TextStyle(color: one),),
+            Text(
+              "Know more, with less.",
+              style: TextStyle(color: one),
+            ),
             SizedBox(
               height: 100,
             ),
-             Image.asset("assets/images/Book.png"),
-             SizedBox(
+            Image.asset("assets/images/Book.png"),
+            SizedBox(
               height: 70,
-             ),
+            ),
             InkWell(
-              onTap: (){},
-               child: Container(
-                height: 52,
-                width: 211,
-                   padding: EdgeInsets.symmetric(vertical: 5),
-                         
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                  color: two
-                ),
-                child: Center(child: Text("Upload PDF",style: TextStyle(color: Colors.white,fontSize: 28),)),
-               ),
-             ),
-             SizedBox(
-              height: 20,
-             ),
-             InkWell(
-              onTap: () {
-                 Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Type_screen(),
-                      ),
-                    );
-              },
-               child: Container(
+              onTap: () {},
+              child: Container(
                 height: 52,
                 width: 211,
                 padding: EdgeInsets.symmetric(vertical: 5),
-                           
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8), color: two),
+                child: Center(
+                    child: Text(
+                  "Upload PDF",
+                  style: TextStyle(color: Colors.white, fontSize: 28),
+                )),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => Type_screen(),
+                  ),
+                );
+              },
+              child: Container(
+                height: 52,
+                width: 211,
+                padding: EdgeInsets.symmetric(vertical: 5),
                 decoration: BoxDecoration(
                   color: two,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Center(child: Text("Enter text",style: TextStyle(color: Colors.white,fontSize: 28),)),
-               ),
-             ),
+                child: Center(
+                    child: Text(
+                  "Enter text",
+                  style: TextStyle(color: Colors.white, fontSize: 28),
+                )),
+              ),
+            ),
           ],
         ),
       ),

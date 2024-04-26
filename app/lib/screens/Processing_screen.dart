@@ -1,12 +1,8 @@
 import 'package:app/constants.dart';
 import 'package:app/screens/Done_screen.dart';
-import 'package:app/screens/Type_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:app/constants.dart';
-import 'package:app/screens/Type_screen.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
+
 
 class ProcessingScreen extends StatelessWidget {
   const ProcessingScreen({super.key});
@@ -17,7 +13,7 @@ class ProcessingScreen extends StatelessWidget {
     Future.delayed(Duration(seconds: 5), () {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => RunMyApp()),
+        MaterialPageRoute(builder: (context) => Done_screen()),
       );
     });
 
