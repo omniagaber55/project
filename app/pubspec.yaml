@@ -38,6 +38,7 @@ dependencies:
   file_picker: ^4.0.0
   pdf: ^3.10.8
   get: ^4.6.6
+  http: ^1.2.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

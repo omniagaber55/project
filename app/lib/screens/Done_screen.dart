@@ -28,49 +28,49 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 70),
+            const SizedBox(height: 70),
             Image.asset("assets/images/Logo (1).png"),
-            Text(
+            const Text(
               "Know more, with less.",
               style: TextStyle(color: one),
             ),
-            SizedBox(height: 30),
-            Center(
+            const SizedBox(height: 30),
+            const Center(
                 child: Text(
               "Done!",
               style: TextStyle(color: three, fontSize: 24),
             )),
-            Center(
+            const Center(
                 child: Text(
               "Here’s your output text",
               style: TextStyle(color: three, fontSize: 24),
             )),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Center(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 50),
+                padding: const EdgeInsets.only(left: 50,right: 30),
                 child: Container(
                   height: 360,
                   width: 360,
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
+                  padding: const EdgeInsets.all(10),
+                  decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(8))),
                   child: TextField(
-                    maxLines: 10,
+                    maxLines:8 ,
                     controller: controller,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none,
-                        hintMaxLines: 10,
+                    
                         hintText:
                             "عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي عربي",
-                        hintStyle: TextStyle(color: three, fontSize: 24)),
+                        hintStyle: TextStyle(color: three, fontSize: 24,)),
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             InkWell(
@@ -79,23 +79,23 @@ class HomePage extends StatelessWidget {
                     .then((_) {
                   controller.clear();
                   ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Copied to your clipboard !')));
+                      const SnackBar(content: Text('Copied to your clipboard !')));
                 });
               },
               child: Container(
                 height: 52,
                 width: 293,
-                padding: EdgeInsets.symmetric(vertical: 5),
+                padding: const EdgeInsets.symmetric(vertical: 5),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8), color: two),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Copy to clipboard",
                   style: TextStyle(color: Colors.white, fontSize: 28),
                 )),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             InkWell(
@@ -103,19 +103,19 @@ class HomePage extends StatelessWidget {
               child: Container(
                 height: 52,
                 width: 293,
-                padding: EdgeInsets.symmetric(vertical: 5),
+                padding: const EdgeInsets.symmetric(vertical: 5),
                 decoration: BoxDecoration(
                   color: two,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Download as pdf",
                   style: TextStyle(color: Colors.white, fontSize: 28),
                 )),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
           ],

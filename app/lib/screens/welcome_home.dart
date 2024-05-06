@@ -12,19 +12,19 @@ class Welcome_screen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             Image.asset("assets/images/Logo (1).png"),
-            Text(
+            const Text(
               "Know more, with less.",
               style: TextStyle(color: one),
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Image.asset("assets/images/Book.png"),
-            SizedBox(
+            const SizedBox(
               height: 70,
             ),
             InkWell(
@@ -32,17 +32,17 @@ class Welcome_screen extends StatelessWidget {
               child: Container(
                 height: 52,
                 width: 211,
-                padding: EdgeInsets.symmetric(vertical: 5),
+                padding: const EdgeInsets.symmetric(vertical: 5),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8), color: two),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Upload PDF",
                   style: TextStyle(color: Colors.white, fontSize: 28),
                 )),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             InkWell(
@@ -50,19 +50,19 @@ class Welcome_screen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Type_screen(),
+                    builder: (context) => const Type_screen(),
                   ),
                 );
               },
               child: Container(
                 height: 52,
                 width: 211,
-                padding: EdgeInsets.symmetric(vertical: 5),
+                padding: const EdgeInsets.symmetric(vertical: 5),
                 decoration: BoxDecoration(
                   color: two,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Enter text",
                   style: TextStyle(color: Colors.white, fontSize: 28),

@@ -10,7 +10,7 @@ class ProcessingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Delayed navigation to the next screen
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(const Duration(seconds: 5), () {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => Done_screen()),
@@ -22,21 +22,21 @@ class ProcessingScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(height: 70),
+            const SizedBox(height: 70),
             Image.asset("assets/images/Logo (1).png"),
-            Text(
+            const Text(
               "Know more, with less.",
               style: TextStyle(color: one),
             ),
-            SizedBox(height: 80),
+            const SizedBox(height: 80),
             Image.asset("assets/images/Book.png"),
-            SizedBox(height: 70),
-            CupertinoActivityIndicator(
+            const SizedBox(height: 70),
+            const CupertinoActivityIndicator(
               radius: 30,
               color: three,
             ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               "Please wait while we process your inputs...",
               style: TextStyle(color: three),
             ),
